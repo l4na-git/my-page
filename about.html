@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="はやぶさについてのサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- リセット　CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- Google フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Klee+One&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ファビコン -->
+    <link rel="icon" type="images/png" href="images/宇宙人.png">
+
+    <title>はやぶさ</title>
+</head>
+
+<body>
+
+    <!-- ヘッダーメニュー -->
+    <header>
+
+        <!-- スマホヘッダー -->
+        <div class="box-header">
+            <span class="box-sitename">はやぶさ</span>
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger-menubox">
+                <input id="hamburger-demo1" type="checkbox" class="input-hidden">
+                <label for="hamburger-demo1" class="hamburger-demo-switch hamburger-demo-switch1">
+                    <span class="hamburger-switch-line1"></span>
+                </label>
+                <div class="hamburger-demo-menuwrap">
+                    <ul class="hamburger-demo-menulist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger-demo-cover"></div>
+            </div>
+        </div>
+
+        <!-- PCヘッダー -->
+        <div class="pc-header">
+            <h1><a href="index.html">はやぶさ</a></h1>
+            <nav>
+                <ul class="pc-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="maintitle">はやぶさ（MUSES-C）について</h1>
+        <h2 class="subtitle">概要</h2>
+        <p class="abouttxt">
+            工学実験を行うために開発された探査機。<br><br>
+            小惑星を探査し、将来の本格的なサンプルリターン探査に必要な技術を実証するのが目的。<br><br>
+            ※小惑星：太陽系の太陽および9つの惑星とそれぞれの衛星以外に存在している小さな星
+        </p>
+        <h2 class="subtitle">歴史</h2>
+        <ul class="history">
+            <li>
+                <span class="time">1985</span>
+                <div class="his_box">
+                    <p>
+                        小惑星サンプルリターン研究会が行われる。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">1986</span>
+                <div class="his_box">
+                    <p>
+                        小惑星Anterosのサンプルリターン計画が構想される。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">1990</span>
+                <div class="his_box">
+                    <p>
+                        工学衛星3案が提案される。<br>
+                        1）金星エントリ気球<br>
+                        2）月面ローバ<br>
+                        3）小惑星ランデブー
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">1995</span>
+                <div class="his_box">
+                    <p>
+                        MUSES-C（はやぶさ）計画の概算要求が行われる。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">1996</span>
+                <div class="his_box">
+                    <p>
+                        MUSES-C（はやぶさ）計画が開始される。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">2000</span>
+                <div class="his_box">
+                    <p>
+                        打ち上げの延期が決まる。<br>
+                        目標の小惑星が、1998SF36（後にイトカワと命名される）へ変更される。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="time">2002</span>
+                <div class="his_box">
+                    <p>
+                        打ち上げが再延期される。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="datetime">
+                    <span class="time">2003</span>
+                    <span class="date">5/9</span>
+                </div>
+                <div class="his_box">
+                    <p>
+                        鹿児島・内之浦宇宙空間観測所から
+                        M-Vロケットによって打ち上げられる。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="datetime">
+                    <span class="time">2004</span>
+                    <span class="date">5/19</span>
+                </div>
+                <div class="his_box">
+                    <p>
+                        地球スウィングバイ成功。<br>
+                        イオンエンジンとスウィングバイの組み合わせは世界初。
+                </div>
+                <div class="datetime">
+                    <span class="date">12/9</span>
+                </div>
+                <div class="his_box">
+                    <p>
+                        イオンエンジンの宇宙作動積算時間が2万時間を突破。
+                    </p>
+                </div>
+                <div class="datetime">
+                    <span class="date">2/8</span>
+                </div>
+                <div class="his_box">
+                    <p>
+                        探査機の軌道において、最も太陽から遠ざかる点、遠日点 (1.7 天文単位）を通過。<br>
+                        太陽から史上最も離れた電気推進ロケットとなる。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <small>&copy; 2024 rana</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

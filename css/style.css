@@ -1,0 +1,572 @@
+@charset "UTF-8";
+
+/* 共通部分
+---------------------------------------------------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    line-height: 1.7;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* 位置 */
+.align-center {
+    text-align: center;
+}
+
+/* 文字の太さ */
+.weightRegular {
+    font-weight: 400;
+}
+
+/* スマホ
+---------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* header */
+
+    /* pc関連のものを非表示 */
+    .pc-header,
+    .pc-hayabusa {
+        display: none;
+    }
+
+    /* ヘッダーの箱 */
+    .box-header {
+        background: #ffffff;
+        padding: 1em;
+        position: fixed;
+        /* ヘッダーを固定する */
+        top: 0;
+        /* 上部から配置の基準位置を決める */
+        left: 0;
+        /* 左から配置の基準位置を決める */
+        width: 100%;
+        /* ヘッダーの横幅を指定する */
+        height: 55px;
+        /* ヘッダーの高さを指定する */
+        padding: 10px;
+        /* ヘッダーの余白を指定する(上下左右) */
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    /* サイト名 */
+    .box-sitename {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    /* 文字サイズ */
+    .hamburger-menubox * {
+        font-size: 16px;
+    }
+
+    .hamburger-menubox li {
+        font-size: 14px;
+    }
+
+    /* ハンバーガーメニュー */
+    /* inputを非表示 */
+    .input-hidden {
+        display: none;
+    }
+
+    /* label */
+    .hamburger-demo-switch {
+        cursor: pointer;
+        position: absolute;
+        right: 3%;
+        top: 0;
+        /* ハンバーガーアイコンの位置（上から） */
+        z-index: 9999;
+        width: 4em;
+        /* アイコン（クリック可能領域）の幅 */
+        height: 4em;
+        /* アイコン（クリック可能領域の）高さ */
+    }
+
+    /* メニュー展開時にハンバーガーアイコンを固定 */
+    #hamburger-demo1:checked~.hamburger-demo-switch {
+        position: fixed;
+    }
+
+    /* ハンバーガーアイコン */
+    .hamburger-switch-line1,
+    .hamburger-switch-line1:before,
+    .hamburger-switch-line1:after {
+        width: 25px;
+        height: 3px;
+        /* ハンバーガーアイコンの色 */
+        background: #333333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: .3s;
+        content: "";
+    }
+
+    .hamburger-switch-line1 {
+        transform: translate(-50%, -50%);
+    }
+
+    .hamburger-switch-line1:before {
+        transform: translate(-50%, -300%);
+    }
+
+    .hamburger-switch-line1:after {
+        transform: translate(-50%, 200%);
+    }
+
+    /* ハンバーガーアイコン･アニメーション */
+    #hamburger-demo1:checked~.hamburger-demo-switch .hamburger-switch-line1 {
+        width: 0;
+    }
+
+    #hamburger-demo1:checked~.hamburger-demo-switch .hamburger-switch-line1:before {
+        transform: rotate(45deg) translate(-40%, 325%);
+    }
+
+    #hamburger-demo1:checked~.hamburger-demo-switch .hamburger-switch-line1:after {
+        transform: rotate(-45deg) translate(-40%, -325%);
+    }
+
+    /* メニューエリア */
+    .hamburger-demo-menuwrap {
+        position: fixed;
+        height: 100%;
+        background: #fafafa;
+        /* メニューエリアの背景色 */
+        padding: 5em 3% 2em;
+        z-index: 9998;
+        transition: .3s;
+        overflow-y: scroll;
+        /* メニュー内容が多い場合に縦スクロールする */
+        top: 0;
+        left: 100%;
+        width: 70%;
+    }
+
+    /* メニューリスト */
+    .hamburger-demo-menulist {
+        margin-right: 3%;
+        padding-left: 5% !important;
+        /* !important不要な場合もあり */
+        list-style: none;
+    }
+
+    .hamburger-demo-menulist li a {
+        text-decoration: none;
+        color: #333;
+        /* メニューリストの文字色 */
+        display: block;
+        padding: .5em 0;
+    }
+
+    /* メニューエリア･アニメーション */
+    /* 右から */
+    #hamburger-demo1:checked~.hamburger-demo-menuwrap {
+        left: 30%;
+    }
+
+    /* コンテンツカバー */
+    #hamburger-demo1:checked~.hamburger-demo-cover {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9997;
+        background: rgba(3, 3, 3, .5);
+        display: block;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding-top: 45%;
+        padding-bottom: 75%;
+        text-align: center;
+    }
+
+    .sp-hayabusa {
+        text-align: center;
+    }
+
+    .maintxt {
+        padding-top: 45%;
+        padding-bottom: 40%;
+        text-align: center;
+        color: #333333;
+    }
+
+    .maintxt a {
+        color: #8491C3;
+    }
+
+    .copyright {
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    /* aboutページ */
+    main {
+        max-width: 90%;
+        margin: auto;
+        padding-top: 55px;
+    }
+
+    .maintitle {
+        font-size: 1.4rem;
+        padding: 1.5rem 0;
+        text-align: left;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        padding: .5rem 0;
+        text-align: left;
+    }
+
+    .abouttxt {
+        padding: .5rem 0;
+    }
+
+    .history {
+        list-style: none;
+        margin: 0 auto 0 4.3em;
+        padding: 1rem 0 1rem 20px;
+        border-left: 6px solid #333333;
+        box-sizing: border-box;
+        border-image: linear-gradient(to top, #8491C3, #333333, #8491C3) 1;
+    }
+
+    .datetime span {
+        display: block;
+        /* 各span要素をブロック表示して縦に並べる */
+    }
+
+    .datetime {
+        display: flex;
+        flex-direction: column;
+        /* spanを縦方向に並べる */
+        align-items: flex-start;
+    }
+
+    .history span.time {
+        width: 5em;
+        display: inline-block;
+        margin-left: -7em;
+        padding: 0 0 5px;
+        margin-top: 15px;
+        vertical-align: top;
+        position: relative;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        font-weight: 410;
+    }
+
+    /* 円 */
+    .history span.time::after {
+        content: "";
+        position: absolute;
+        right: -35.2px;
+        top: 10px;
+        background: #333333;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    .datetime span.date {
+        width: 5em;
+        display: inline-block;
+        margin-left: -7.6em;
+        vertical-align: top;
+        position: relative;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .his_box {
+        font-size: 1rem;
+    }
+
+    /* mediaページ */
+    .media {
+        position: relative;
+        padding: 0;
+    }
+
+    .media li {
+        list-style-type: none;
+        color: #333333;
+        border-left: solid 8px #333333;
+        background: #dfeaf560;
+        margin-bottom: 3px;
+        line-height: 1.5;
+        padding: 0.5em;
+    }
+
+    .media a {
+        color: #8491C3;
+    }
+
+    .media img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* width, heightといっしょに使います */
+        padding: 1.5rem;
+    }
+
+
+}
+
+/* PC
+---------------------------------------------------------------- */
+@media (min-width: 769px) {
+    .box-header {
+        display: none;
+    }
+
+    .sp-hayabusa {
+        display: none;
+    }
+
+    .pc-header {
+        background: #ffffff;
+        height: 64px;
+        padding: 3em .1em;
+        line-height: 14px;
+        margin: auto;
+        position: fixed;
+        /* ヘッダーを固定する */
+        top: 0;
+        /* 上部から配置の基準位置を決める */
+        left: 0;
+        /* 左から配置の基準位置を決める */
+        right: 0;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        padding-left: 5rem;
+    }
+
+    h1 a {
+        color: #333333;
+    }
+
+    .pc-nav {
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        list-style: none;
+        line-height: 0;
+    }
+
+    .pc-nav a {
+        color: #333333;
+        position: relative;
+    }
+
+    .pc-nav a::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #333333;
+        bottom: -1px;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+        transition: transform 0.3s;
+        /*変形の時間*/
+    }
+
+    .pc-nav a:hover::after {
+        transform: scale(1, 1);
+        /*ホバー後、x軸方向に1（相対値）伸長*/
+    }
+
+    h2 {
+        font-weight: 1000;
+        font-size: 4.2rem;
+        padding-top: 10%;
+        padding-bottom: 8%;
+        text-align: center;
+    }
+
+    .pc-hayabusa {
+        width: 75%;
+        margin: auto;
+        display: block;
+    }
+
+    .maintxt {
+        padding-top: 13.5%;
+        padding-bottom: 17%;
+        text-align: center;
+        color: #333333;
+        font-size: 1.4rem;
+        font-weight: 395;
+    }
+
+    .maintxt a {
+        color: #8491C3;
+    }
+
+    /* フッター */
+    .copyright {
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 1.4rem;
+    }
+
+    /* aboutページ */
+    main {
+        max-width: 90%;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    .maintitle {
+        font-size: 1.4rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .abouttxt {
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .history {
+        list-style: none;
+        margin: 0 auto 0 25em;
+        padding: 1rem 0 1rem 20px;
+        border-left: 6px solid #333333;
+        box-sizing: border-box;
+        border-image: linear-gradient(to top, #8491C3, #333333, #8491C3) 1;
+    }
+
+    .datetime span {
+        display: block;
+        /* 各span要素をブロック表示して縦に並べる */
+    }
+
+    .datetime {
+        display: flex;
+        flex-direction: column;
+        /* spanを縦方向に並べる */
+        align-items: flex-start;
+    }
+
+    .history span.time {
+        width: 5em;
+        display: inline-block;
+        margin-left: -7em;
+        padding: 0 0 5px;
+        margin-top: 15px;
+        vertical-align: top;
+        position: relative;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        font-weight: 410;
+    }
+
+    .history span.time::after {
+        content: "";
+        position: absolute;
+        right: -35.2px;
+        top: 10px;
+        background: #333333;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    .datetime span.date {
+        width: 5em;
+        display: inline-block;
+        margin-left: -7.6em;
+        vertical-align: top;
+        position: relative;
+        text-align: right;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    /* mediaページ */
+    .media {
+        max-width: 60%;
+        position: relative;
+        padding: 0;
+        margin: auto;
+    }
+
+    .media li {
+        list-style-type: none;
+        color: #333333;
+        border-left: solid 8px #333333;
+        background: #dfeaf560;
+        margin-bottom: auto;
+        line-height: 1.5;
+        padding: 0.5em;
+    }
+
+    .media a {
+        color: #8491C3;
+    }
+
+    .item-g {
+        display: flex;
+    }
+
+    p.test img {
+        width: 200px;
+        object-fit: cover;
+        /* width, heightといっしょに使います */
+        padding: 0 1.5rem 1.5rem;
+        flex: 2;
+    }
+
+    .item {
+        flex: 1;
+    }
+
+
+}
