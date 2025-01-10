@@ -421,6 +421,7 @@ img {
     }
 
     .pc-hayabusa {
+        text-align: center;
         width: 75%;
         margin: auto;
         display: block;
