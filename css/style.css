@@ -308,13 +308,13 @@ img {
         font-size: 1rem;
     }
 
-    /* mediaページ */
-    .media {
+    /* linksページ */
+    .links {
         position: relative;
         padding: 0;
     }
 
-    .media li {
+    .links li {
         list-style-type: none;
         color: #333333;
         border-left: solid 8px #333333;
@@ -324,11 +324,11 @@ img {
         padding: 0.5em;
     }
 
-    .media a {
+    .links a {
         color: #8491C3;
     }
 
-    .media img {
+    .links img {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -531,15 +531,15 @@ img {
         font-weight: 400;
     }
 
-    /* mediaページ */
-    .media {
+    /* linksページ */
+    .links {
         max-width: 60%;
         position: relative;
         padding: 0;
         margin: auto;
     }
 
-    .media li {
+    .links li {
         list-style-type: none;
         color: #333333;
         border-left: solid 8px #333333;
@@ -549,7 +549,7 @@ img {
         padding: 0.5em;
     }
 
-    .media a {
+    .links a {
         color: #8491C3;
     }
 
