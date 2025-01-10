@@ -266,22 +266,22 @@ img {
         align-items: flex-start;
     }
 
-    .history span.time {
+    .time {
         width: 5em;
         display: inline-block;
-        margin-left: -7em;
+        margin-left: -6.7em;
         padding: 0 0 5px;
         margin-top: 15px;
         vertical-align: top;
         position: relative;
         text-align: right;
         box-sizing: border-box;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 410;
     }
 
     /* 円 */
-    .history span.time::after {
+    .time::after {
         content: "";
         position: absolute;
         right: -35.2px;
@@ -290,12 +290,14 @@ img {
         width: 20px;
         height: 20px;
         border-radius: 10px;
+        transform: translateX(-60%);
     }
 
-    .datetime span.date {
+    .date {
         width: 5em;
         display: inline-block;
-        margin-left: -7.6em;
+        margin-left: -5.3em;
+        margin-top: 2em;
         vertical-align: top;
         position: relative;
         text-align: right;
@@ -494,7 +496,7 @@ img {
         align-items: flex-start;
     }
 
-    .history span.time {
+    .time {
         width: 5em;
         display: inline-block;
         margin-left: -7em;
@@ -508,7 +510,7 @@ img {
         font-weight: 410;
     }
 
-    .history span.time::after {
+    .time::after {
         content: "";
         position: absolute;
         right: -35.2px;
@@ -519,16 +521,15 @@ img {
         border-radius: 10px;
     }
 
-    .datetime span.date {
-        width: 5em;
+    .date {
+        width: auto;
         display: inline-block;
-        margin-left: -7.6em;
-        vertical-align: top;
-        position: relative;
-        text-align: right;
+        text-align: center;
         box-sizing: border-box;
         font-size: 1.2rem;
         font-weight: 400;
+        margin-top: 2.5em;
+        margin-left: -2em;
     }
 
     /* linksページ */
