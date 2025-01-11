@@ -215,11 +215,16 @@ img {
         color: #8491C3;
     }
 
-    .copyright {
+    footer {
         background-color: #333333;
         color: #ffffff;
         text-align: center;
         padding: 2rem 0;
+    }
+
+    footer img {
+        padding-top: 1rem;
+        width: 30px;
     }
 
     /* aboutページ */
@@ -243,6 +248,45 @@ img {
 
     .abouttxt {
         padding: .5rem 0;
+    }
+
+    .important {
+        padding-bottom: 1.5rem;
+    }
+
+    .important li {
+        list-style: none;
+        padding: 1.2rem 0;
+    }
+
+    .important li::before {
+        content: '\f105';
+        font-family: 'FontAwesome';
+        color: #8491C3;
+        padding-right: 1rem;
+    }
+
+    blockquote{
+        position:relative;
+        border-left:3px solid #8491C3;
+        padding-left:10px;
+    }
+    blockquote:before{
+        position:absolute;
+        font-family:'FontAwesome';
+        content:'\f10d';
+        font-size: 20px;
+        color:#8491C3;
+    }
+    blockquote p{
+        position:relative;
+        padding-left:30px;
+    }
+    blockquote span{
+        display: block;
+        font-size:0.8rem;
+        color:#8491C3;
+        font-style: italic;
     }
 
     .history {
@@ -443,12 +487,17 @@ img {
     }
 
     /* フッター */
-    .copyright {
+    footer {
         background-color: #333333;
         color: #ffffff;
         text-align: center;
         padding: 2rem 0;
         font-size: 1.4rem;
+    }
+
+    footer img {
+        padding-top: 1rem;
+        width: 60px;
     }
 
     /* aboutページ */
@@ -473,6 +522,45 @@ img {
     .abouttxt {
         padding: .5rem 0;
         text-align: center;
+    }
+
+    .important {
+        padding: 0 0 1.5rem 40%;
+    }
+
+    .important li {
+        list-style: none;
+        padding: 1.2rem 0;
+    }
+
+    .important li::before {
+        content: '\f105';
+        font-family: 'FontAwesome';
+        color: #8491C3;
+        padding-right: 1rem;
+    }
+
+    blockquote{
+        position:relative;
+        border-left:3px solid #8491C3;
+        padding-left:10px;
+    }
+    blockquote:before{
+        position:absolute;
+        font-family:'FontAwesome';
+        content:'\f10d';
+        font-size: 20px;
+        color:#8491C3;
+    }
+    blockquote p{
+        position:relative;
+        padding-left:30px;
+    }
+    blockquote span{
+        display: block;
+        font-size:0.8rem;
+        color:#8491C3;
+        font-style: italic;
     }
 
     .history {
