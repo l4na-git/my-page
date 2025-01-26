@@ -365,6 +365,12 @@ img {
         font-size: 1rem;
     }
 
+    .create {
+        color: #8491C3;
+        display: block;
+        margin: 1rem auto;
+    }
+
     /* linksページ */
     .links {
         position: relative;
@@ -629,6 +635,13 @@ img {
         font-weight: 400;
         margin-top: 2.5em;
         margin-left: -2em;
+    }
+
+    .create {
+        color: #8491C3;
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
     }
 
     /* linksページ */
