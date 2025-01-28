@@ -204,11 +204,10 @@ img {
         display: block;
     }
 
-    h2 {
+    #title {
+        font-size: 2.5rem;
         font-weight: 700;
-        font-size: 1.8rem;
-        padding-top: 45%;
-        padding-bottom: 75%;
+        padding: 7rem 0 5rem;
         text-align: center;
     }
 
@@ -243,7 +242,7 @@ img {
     main {
         max-width: 90%;
         margin: auto;
-        padding-top: 55px;
+        padding: 10px 0;
     }
 
     .maintitle {
@@ -476,32 +475,11 @@ img {
         /*ホバー後、x軸方向に1（相対値）伸長*/
     }
 
-    h2 {
-        font-weight: 1000;
-        font-size: 4.2rem;
-        padding-top: 10%;
-        padding-bottom: 8%;
-        text-align: center;
-    }
-
     .pc-hayabusa {
         text-align: center;
         width: 65%;
         margin: auto;
         display: block;
-    }
-
-    .maintxt {
-        padding-top: 13.5%;
-        padding-bottom: 17%;
-        text-align: center;
-        color: #333333;
-        font-size: 1.3rem;
-        font-weight: 395;
-    }
-
-    .maintxt a {
-        color: #8491C3;
     }
 
     /* フッター */
@@ -518,11 +496,17 @@ img {
         width: 60px;
     }
 
-    /* aboutページ */
+    #title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        padding: 13rem 0 5rem;
+        text-align: center;
+    }
+
     main {
         max-width: 90%;
         margin: auto;
-        padding-top: 100px;
+        padding: 20px 0;
     }
 
     .maintitle {
@@ -533,7 +517,7 @@ img {
 
     .subtitle {
         font-size: 1.3rem;
-        padding: .5rem 0;
+        padding:  15px 0;
         text-align: center;
     }
 
