@@ -1,4 +1,7 @@
 # my-page
 
-ここから閲覧できます。<br>
-[みてね!](https://tagra-git.github.io/my-page/index.html)
+このWebサイトは、HTMLとCSSを学んで初めて作成しました。
+
+レスポンシブ対応やレイアウトについて意識しています。
+
+今後はJavaScriptを使用して動きをつけたり、デザインを改善したりしながらアップデートしていく予定です !
