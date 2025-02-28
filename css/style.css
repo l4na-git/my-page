@@ -605,8 +605,9 @@ img {
 
     .history {
         list-style: none;
-        margin: 0 auto 0 25em;
+        margin: 0 auto;
         padding: 1rem 0 1rem 20px;
+        max-width: 500px;
         border-left: 6px solid #0f2350;
         box-sizing: border-box;
         border-image: linear-gradient(to top, #2ca8e133, #2ca9e1, #2ca8e133) 1;
