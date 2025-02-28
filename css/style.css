@@ -46,7 +46,8 @@ img {
 ---------------------------------------------------------------- */
 @media (max-width: 768px) {
 
-    /* header */
+    /* header
+    ------------------------------------------------------------ */
 
     /* pc関連のものを非表示 */
     .pc-header,
@@ -59,17 +60,11 @@ img {
         background: #ffffff;
         padding: 1em;
         position: fixed;
-        /* ヘッダーを固定する */
         top: 0;
-        /* 上部から配置の基準位置を決める */
         left: 0;
-        /* 左から配置の基準位置を決める */
         width: 100%;
-        /* ヘッダーの横幅を指定する */
         height: 55px;
-        /* ヘッダーの高さを指定する */
         padding: 10px;
-        /* ヘッダーの余白を指定する(上下左右) */
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
     }
@@ -80,16 +75,9 @@ img {
         font-size: 18px;
     }
 
-    /* 文字サイズ */
-    .hamburger-menubox * {
-        font-size: 16px;
-    }
+    /* ハンバーガーメニュー
+    ------------------------------------------------------------ */
 
-    .hamburger-menubox li {
-        font-size: 14px;
-    }
-
-    /* ハンバーガーメニュー */
     /* inputを非表示 */
     .input-hidden {
         display: none;
@@ -101,12 +89,9 @@ img {
         position: absolute;
         right: 3%;
         top: 0;
-        /* ハンバーガーアイコンの位置（上から） */
         z-index: 9999;
         width: 4em;
-        /* アイコン（クリック可能領域）の幅 */
         height: 4em;
-        /* アイコン（クリック可能領域の）高さ */
     }
 
     /* メニュー展開時にハンバーガーアイコンを固定 */
@@ -159,12 +144,10 @@ img {
         position: fixed;
         height: 100%;
         background: #fafafa;
-        /* メニューエリアの背景色 */
         padding: 5em 3% 2em;
         z-index: 9998;
         transition: .3s;
         overflow-y: scroll;
-        /* メニュー内容が多い場合に縦スクロールする */
         top: 0;
         left: 100%;
         width: 70%;
@@ -174,20 +157,17 @@ img {
     .hamburger-demo-menulist {
         margin-right: 3%;
         padding-left: 5% !important;
-        /* !important不要な場合もあり */
         list-style: none;
     }
 
     .hamburger-demo-menulist li a {
         text-decoration: none;
         color: #333;
-        /* メニューリストの文字色 */
         display: block;
         padding: .5em 0;
     }
 
     /* メニューエリア･アニメーション */
-    /* 右から */
     #hamburger-demo1:checked~.hamburger-demo-menuwrap {
         left: 30%;
     }
@@ -204,28 +184,6 @@ img {
         display: block;
     }
 
-    #title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        padding: 7rem 0 5rem;
-        text-align: center;
-    }
-
-    .sp-hayabusa {
-        text-align: center;
-    }
-
-    .maintxt {
-        padding-top: 45%;
-        padding-bottom: 40%;
-        text-align: center;
-        color: #333333;
-    }
-
-    .maintxt a {
-        color: #8491C3;
-    }
-
     footer {
         background-color: #333333;
         color: #ffffff;
@@ -238,11 +196,10 @@ img {
         width: 30px;
     }
 
-    /* aboutページ */
-    main {
-        max-width: 90%;
-        margin: auto;
-        padding: 10px 0;
+    #about,
+    #education,
+    #finally {
+        padding: 3rem 1em;
     }
 
     .maintitle {
@@ -257,8 +214,46 @@ img {
         text-align: left;
     }
 
+    .maintxt {
+        padding-top: 45%;
+        padding-bottom: 40%;
+        text-align: center;
+        color: #333333;
+    }
+
     .abouttxt {
         padding: .5rem 0;
+    }
+
+    .maintxt a {
+        color: #2ca9e1;
+    }
+
+    /* home
+    ------------------------------------------------------------ */
+    #home {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        background-color: #f2f9fd;
+    }
+
+    #title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    #titletxt {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    /* about
+    ------------------------------------------------------------ */
+    #about {
+        background-color: #ffffff;
     }
 
     .important {
@@ -273,31 +268,43 @@ img {
     .important li::before {
         content: '\f105';
         font-family: 'FontAwesome';
-        color: #8491C3;
+        color: #2ca9e1;
         padding-right: 1rem;
     }
 
-    blockquote{
-        position:relative;
-        border-left:3px solid #8491C3;
-        padding-left:10px;
+    blockquote {
+        position: relative;
+        border-left: 3px solid #2ca9e1;
+        padding-left: 10px;
     }
-    blockquote:before{
-        position:absolute;
-        font-family:'FontAwesome';
-        content:'\f10d';
+
+    blockquote:before {
+        position: absolute;
+        font-family: 'FontAwesome';
+        content: '\f10d';
         font-size: 20px;
-        color:#8491C3;
+        color: #2ca9e1;
     }
-    blockquote p{
-        position:relative;
-        padding-left:30px;
+
+    blockquote p {
+        position: relative;
+        padding-left: 30px;
     }
-    blockquote span{
+
+    blockquote span {
         display: block;
-        font-size:0.8rem;
-        color:#8491C3;
+        font-size: 0.8rem;
+        color: #2ca9e1;
         font-style: italic;
+    }
+
+    /* education
+    ------------------------------------------------------------ */
+    #education {
+        background-color: #f2f9fd;
+        background-image:  linear-gradient(#2ca8e115 3px, transparent 3px), linear-gradient(to right, #2ca8e115 3px, #f2f9fd 3px);
+        background-size: 35px 35px;
+        background-repeat: repeat;
     }
 
     .history {
@@ -306,7 +313,7 @@ img {
         padding: 1rem 0 1rem 20px;
         border-left: 6px solid #333333;
         box-sizing: border-box;
-        border-image: linear-gradient(to top, #8491C3, #333333, #8491C3) 1;
+        border-image: linear-gradient(to top, #2ca8e133, #2ca9e1, #2ca8e133) 1;
     }
 
     .datetime span {
@@ -366,7 +373,7 @@ img {
     }
 
     .create {
-        color: #8491C3;
+        color: #2ca9e1;
         display: block;
         margin: 1rem auto;
     }
@@ -388,18 +395,15 @@ img {
     }
 
     .links a {
-        color: #8491C3;
+        color: #2ca9e1;
     }
 
     .links img {
         width: 100%;
         height: auto;
         object-fit: cover;
-        /* width, heightといっしょに使います */
         padding: 1.5rem;
     }
-
-
 }
 
 /* PC
@@ -409,15 +413,10 @@ img {
         display: none;
     }
 
-    .sp-hayabusa {
-        display: none;
-    }
-
     .pc-header {
-        background: #ffffff;
-        height: 64px;
-        padding: 3em .1em;
-        line-height: 14px;
+        padding: 1.2em 5em;
+        background: #ffffff17;
+        backdrop-filter: blur(50px);
         margin: auto;
         position: fixed;
         /* ヘッダーを固定する */
@@ -430,32 +429,32 @@ img {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
     }
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 800;
-        padding-left: 5rem;
-    }
-
-    h1 a {
-        color: #333333;
-    }
-
     .pc-nav {
         display: flex;
-        justify-content: center;
-        gap: 7rem;
+        justify-content: space-between;
+        align-items: center;
         font-size: 1.5rem;
         font-weight: 500;
         list-style: none;
-        line-height: 0;
     }
 
-    .pc-nav a {
+    #sitename {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #333333;
+    }
+
+    .navname {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .navname a{
         color: #333333;
         position: relative;
     }
 
-    .pc-nav a::after {
+    .navname a::after {
         position: absolute;
         left: 0;
         content: '';
@@ -470,20 +469,19 @@ img {
         /*変形の時間*/
     }
 
-    .pc-nav a:hover::after {
+    .navname a:hover::after {
         transform: scale(1, 1);
         /*ホバー後、x軸方向に1（相対値）伸長*/
     }
 
-    .pc-hayabusa {
-        text-align: center;
-        width: 65%;
+    body {
         margin: auto;
-        display: block;
     }
 
     /* フッター */
     footer {
+        margin: 0;
+        width: 100%;
         background-color: #333333;
         color: #ffffff;
         text-align: center;
@@ -496,17 +494,14 @@ img {
         width: 60px;
     }
 
-    #title {
-        font-size: 2.5rem;
-        font-weight: 700;
-        padding: 13rem 0 5rem;
-        text-align: center;
+    main {
+        max-width: auto;
     }
 
-    main {
-        max-width: 90%;
-        margin: auto;
-        padding: 20px 0;
+    #about,
+    #education,
+    #finally {
+        padding: 7rem 0;
     }
 
     .maintitle {
@@ -517,8 +512,8 @@ img {
 
     .subtitle {
         font-size: 1.3rem;
-        padding:  15px 0;
         text-align: center;
+        padding: 20px 0;
     }
 
     .abouttxt {
@@ -526,8 +521,35 @@ img {
         text-align: center;
     }
 
+    /* home
+    ------------------------------------------------------------ */
+    #home {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        background-color: #f2f9fd;
+    }
+
+    #title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    #titletxt {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    /* about
+    ------------------------------------------------------------ */
+    #about {
+        background-color: #ffffff;
+    }
+
     .important {
-        padding: 0 0 1.5rem 40%;
+        padding: 0 0 0 40%;
     }
 
     .important li {
@@ -538,31 +560,43 @@ img {
     .important li::before {
         content: '\f105';
         font-family: 'FontAwesome';
-        color: #8491C3;
+        color: #2ca9e1;
         padding-right: 1rem;
     }
 
-    blockquote{
-        position:relative;
-        border-left:3px solid #8491C3;
-        padding-left:10px;
+    blockquote {
+        position: relative;
+        border-left: 3px solid #2ca9e1;
+        padding-left: 10px;
     }
-    blockquote:before{
-        position:absolute;
-        font-family:'FontAwesome';
-        content:'\f10d';
+
+    blockquote:before {
+        position: absolute;
+        font-family: 'FontAwesome';
+        content: '\f10d';
         font-size: 20px;
-        color:#8491C3;
+        color: #2ca9e1;
     }
-    blockquote p{
-        position:relative;
-        padding-left:30px;
+
+    blockquote p {
+        position: relative;
+        padding-left: 30px;
     }
-    blockquote span{
+
+    blockquote span {
         display: block;
-        font-size:0.8rem;
-        color:#8491C3;
+        font-size: 0.8rem;
+        color: #2ca9e1;
         font-style: italic;
+    }
+
+    /* education
+    ------------------------------------------------------------ */
+    #education {
+        background-color: #f2f9fd;
+        background-image:  linear-gradient(#2ca8e115 3px, transparent 3px), linear-gradient(to right, #2ca8e115 3px, #f2f9fd 3px);
+        background-size: 60px 60px;
+        background-repeat: repeat;
     }
 
     .history {
@@ -571,7 +605,7 @@ img {
         padding: 1rem 0 1rem 20px;
         border-left: 6px solid #333333;
         box-sizing: border-box;
-        border-image: linear-gradient(to top, #8491C3, #333333, #8491C3) 1;
+        border-image: linear-gradient(to top, #2ca8e133, #2ca9e1, #2ca8e133) 1;
     }
 
     .datetime span {
@@ -623,49 +657,8 @@ img {
     }
 
     .create {
-        color: #8491C3;
+        color: #2ca9e1;
         display: block;
         text-align: center;
-        margin: 1rem auto;
     }
-
-    /* linksページ */
-    .links {
-        max-width: 60%;
-        position: relative;
-        padding: 0;
-        margin: auto;
-    }
-
-    .links li {
-        list-style-type: none;
-        color: #333333;
-        border-left: solid 8px #333333;
-        background: #dfeaf560;
-        margin-bottom: auto;
-        line-height: 1.5;
-        padding: 0.5em;
-    }
-
-    .links a {
-        color: #8491C3;
-    }
-
-    .item-g {
-        display: flex;
-    }
-
-    p.test img {
-        width: 200px;
-        object-fit: cover;
-        /* width, heightといっしょに使います */
-        padding: 0 1.5rem 1.5rem;
-        flex: 2;
-    }
-
-    .item {
-        flex: 1;
-    }
-
-
 }

@@ -40,7 +40,6 @@
         <div class="box-header">
             <span class="box-sitename">tagra</span>
             <!-- ハンバーガーメニュー -->
-            <div class="hamburger-menubox">
                 <input id="hamburger-demo1" type="checkbox" class="input-hidden">
                 <label for="hamburger-demo1" class="hamburger-demo-switch hamburger-demo-switch1">
                     <span class="hamburger-switch-line1"></span>
@@ -53,17 +52,18 @@
                     </ul>
                 </div>
                 <div class="hamburger-demo-cover"></div>
-            </div>
         </div>
 
         <!-- PCヘッダー -->
         <div class="pc-header">
-            <h1><a href="#home">tagra</a></h1>
             <nav>
                 <ul class="pc-nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#home" id="sitename">tagra</a></li>
+                    <div class="navname">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -71,14 +71,8 @@
     </header>
 
     <main id="home">
-        <h1 id="title">Welcome to Tagra's page!</h1>
-        <div class="sp-hayabusa">
-            <img src="images/girl.png" alt="音楽をきいている女の子">
-        </div>
-        <div class="pc-hayabusa">
-            <img src="images/study.png" alt="勉強している女の子">
-        </div>
-        <h1 class="maintitle">About this page</h1>
+        <p id="titletxt">Hello, I'm</p>
+        <h1 id="title">Tagra</h1>
         <div class="abouttxt">
             <p>ここはIT専門学生の自己紹介サイトです。</p>
             <p>学び始めたばかりですが、わたしのことを知っていただけたら嬉しいなと思い作りました !</p>
@@ -172,7 +166,7 @@
 
     </main>
 
-    <main>
+    <main id="finally">
         <h1 class="maintitle">Finally</h1>
         <p class="abouttxt">
             最後まで見ていただきありがとうございます !
