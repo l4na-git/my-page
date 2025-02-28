@@ -194,6 +194,8 @@ img {
     footer img {
         padding-top: 1rem;
         width: 30px;
+        display: inline-block;
+        margin: 0 .3rem;
     }
 
     #about,
@@ -491,7 +493,9 @@ img {
 
     footer img {
         padding-top: 1rem;
-        width: 60px;
+        width: 50px;
+        display: inline-block;
+        margin: 0 .5rem;
     }
 
     main {
