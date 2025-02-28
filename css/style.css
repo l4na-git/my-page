@@ -10,7 +10,7 @@ html {
 body {
     font-family: "Zen Kaku Gothic New", sans-serif;
     line-height: 1.7;
-    color: #333333;
+    color: #0f2350;
     animation: fadein 1s forwards;
 }
 
@@ -106,7 +106,7 @@ img {
         width: 25px;
         height: 3px;
         /* ハンバーガーアイコンの色 */
-        background: #333333;
+        background: #0f2350;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -185,7 +185,7 @@ img {
     }
 
     footer {
-        background-color: #333333;
+        background-color: #0f2350;
         color: #ffffff;
         text-align: center;
         padding: 2rem 0;
@@ -220,7 +220,7 @@ img {
         padding-top: 45%;
         padding-bottom: 40%;
         text-align: center;
-        color: #333333;
+        color: #0f2350;
     }
 
     .abouttxt {
@@ -313,7 +313,7 @@ img {
         list-style: none;
         margin: 0 auto 0 4.3em;
         padding: 1rem 0 1rem 20px;
-        border-left: 6px solid #333333;
+        border-left: 6px solid #0f2350;
         box-sizing: border-box;
         border-image: linear-gradient(to top, #2ca8e133, #2ca9e1, #2ca8e133) 1;
     }
@@ -350,7 +350,7 @@ img {
         position: absolute;
         right: -35.2px;
         top: 10px;
-        background: #333333;
+        background: #0f2350;
         width: 20px;
         height: 20px;
         border-radius: 10px;
@@ -388,8 +388,8 @@ img {
 
     .links li {
         list-style-type: none;
-        color: #333333;
-        border-left: solid 8px #333333;
+        color: #0f2350;
+        border-left: solid 8px #0f2350;
         background: #dfeaf560;
         margin-bottom: 3px;
         line-height: 1.5;
@@ -443,7 +443,7 @@ img {
     #sitename {
         font-size: 2rem;
         font-weight: 800;
-        color: #333333;
+        color: #0f2350;
     }
 
     .navname {
@@ -452,7 +452,7 @@ img {
     }
 
     .navname a{
-        color: #333333;
+        color: #0f2350;
         position: relative;
     }
 
@@ -462,7 +462,7 @@ img {
         content: '';
         width: 100%;
         height: 2px;
-        background: #333333;
+        background: #0f2350;
         bottom: -1px;
         transform: scale(0, 1);
         transform-origin: center top;
@@ -484,7 +484,7 @@ img {
     footer {
         margin: 0;
         width: 100%;
-        background-color: #333333;
+        background-color: #0f2350;
         color: #ffffff;
         text-align: center;
         padding: 2rem 0;
@@ -607,7 +607,7 @@ img {
         list-style: none;
         margin: 0 auto 0 25em;
         padding: 1rem 0 1rem 20px;
-        border-left: 6px solid #333333;
+        border-left: 6px solid #0f2350;
         box-sizing: border-box;
         border-image: linear-gradient(to top, #2ca8e133, #2ca9e1, #2ca8e133) 1;
     }
@@ -643,7 +643,7 @@ img {
         position: absolute;
         right: -35.2px;
         top: 10px;
-        background: #333333;
+        background: #0f2350;
         width: 20px;
         height: 20px;
         border-radius: 10px;
