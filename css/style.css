@@ -32,6 +32,10 @@ img {
     font-weight: 400;
 }
 
+.myname {
+    font-family: "Manrope", sans-serif;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0
